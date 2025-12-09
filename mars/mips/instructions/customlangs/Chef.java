@@ -191,7 +191,7 @@ public class Chef extends CustomAssembly{
                 new BasicInstruction("to_fridge $t0,12($t1)",
                         "Store word: ($t1 + offset) in memory = $t0",
                         BasicInstructionFormat.I_FORMAT,
-                        "111111 sssss fffff tttttttttttttttt",
+                        "111110 sssss fffff tttttttttttttttt",
                         new SimulationCode()
                         {
                             public void simulate(ProgramStatement statement) throws ProcessingException
